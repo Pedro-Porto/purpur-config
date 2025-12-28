@@ -1,0 +1,264 @@
+general:
+  reward-limiter:
+    enabled: false
+    limit: 10
+    limit-reached-message: "&cYou have reached the reward limit. You have to wait for a while before you can receive more rewards."
+    cooldown: 10m
+
+pvp:
+  kill-player: 500.0
+
+block:
+  ownership-check:
+    break: true
+    place: true
+  break:
+    coal_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 0.5
+        maximum-economy: 0.5
+        commands: []
+    deepslate_coal_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 0.5
+        maximum-economy: 0.5
+        commands: []
+    copper_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 0.8
+        maximum-economy: 0.8
+        commands: []
+    deepslate_copper_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 0.8
+        maximum-economy: 0.8
+        commands: []
+    iron_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 1.5
+        maximum-economy: 1.5
+        commands: []
+    deepslate_iron_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 1.5
+        maximum-economy: 1.5
+        commands: []
+    gold_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 3.0
+        maximum-economy: 3.0
+        commands: []
+    deepslate_gold_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 3.0
+        maximum-economy: 3.0
+        commands: []
+    redstone_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 1.2
+        maximum-economy: 1.2
+        commands: []
+    deepslate_redstone_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 1.2
+        maximum-economy: 1.2
+        commands: []
+    lapis_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 1.2
+        maximum-economy: 1.2
+        commands: []
+    deepslate_lapis_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 1.2
+        maximum-economy: 1.2
+        commands: []
+    diamond_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 8.0
+        maximum-economy: 8.0
+        commands: []
+    deepslate_diamond_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 8.0
+        maximum-economy: 8.0
+        commands: []
+    emerald_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 10.0
+        maximum-economy: 10.0
+        commands: []
+    deepslate_emerald_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 10.0
+        maximum-economy: 10.0
+        commands: []
+    nether_quartz_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 0.6
+        maximum-economy: 0.6
+        commands: []
+    nether_gold_ore:
+      default:
+        chance: 100.0
+        minimum-economy: 2.0
+        maximum-economy: 2.0
+        commands: []
+    ancient_debris:
+      default:
+        chance: 100.0
+        minimum-economy: 30.0
+        maximum-economy: 30.0
+        commands: []
+
+entity:
+  ownership-check:
+    breed: true
+    spawner: true
+  kill:
+    zombie:
+      default:
+        chance: 100.0
+        minimum-economy: 0.1
+        maximum-economy: 0.1
+        commands: []
+    skeleton:
+      default:
+        chance: 100.0
+        minimum-economy: 0.1
+        maximum-economy: 0.1
+        commands: []
+    creeper:
+      default:
+        chance: 100.0
+        minimum-economy: 0.2
+        maximum-economy: 0.2
+        commands: []
+    spider:
+      default:
+        chance: 100.0
+        minimum-economy: 0.1
+        maximum-economy: 0.1
+        commands: []
+    cave_spider:
+      default:
+        chance: 100.0
+        minimum-economy: 0.8
+        maximum-economy: 0.8
+        commands: []
+    enderman:
+      default:
+        chance: 100.0
+        minimum-economy: 0.1
+        maximum-economy: 0.1
+        commands: []
+    witch:
+      default:
+        chance: 100.0
+        minimum-economy: 0.5
+        maximum-economy: 0.5
+        commands: []
+    blaze:
+      default:
+        chance: 100.0
+        minimum-economy: 1.0
+        maximum-economy: 1.0
+        commands: []
+    wither_skeleton:
+      default:
+        chance: 100.0
+        minimum-economy: 3.0
+        maximum-economy: 3.0
+        commands: []
+    slime:
+      default:
+        chance: 100.0
+        minimum-economy: 0.1
+        maximum-economy: 0.1
+        commands: []
+    magma_cube:
+      default:
+        chance: 100.0
+        minimum-economy: 0.6
+        maximum-economy: 0.6
+        commands: []
+    guardian:
+      default:
+        chance: 100.0
+        minimum-economy: 2.5
+        maximum-economy: 2.5
+        commands: []
+    elder_guardian:
+      default:
+        chance: 100.0
+        minimum-economy: 15.0
+        maximum-economy: 15.0
+        commands: []
+    phantom:
+      default:
+        chance: 100.0
+        minimum-economy: 1.0
+        maximum-economy: 1.0
+        commands: []
+    piglin:
+      default:
+        chance: 100.0
+        minimum-economy: 1.2
+        maximum-economy: 1.2
+        commands: []
+    hoglin:
+      default:
+        chance: 100.0
+        minimum-economy: 2.0
+        maximum-economy: 2.0
+        commands: []
+    drowned:
+      default:
+        chance: 100.0
+        minimum-economy: 0.9
+        maximum-economy: 0.9
+        commands: []
+    husk:
+      default:
+        chance: 100.0
+        minimum-economy: 1.0
+        maximum-economy: 1.0
+        commands: []
+    strider:
+      default:
+        chance: 100.0
+        minimum-economy: 0.5
+        maximum-economy: 0.5
+        commands: []
+    shulker:
+      default:
+        chance: 100.0
+        minimum-economy: 3.0
+        maximum-economy: 3.0
+        commands: []
+    ender_dragon:
+      default:
+        chance: 100.0
+        minimum-economy: 1000.0
+        maximum-economy: 1000.0
+        commands: []
+
+settings:
+  prevent-afk-farms: true

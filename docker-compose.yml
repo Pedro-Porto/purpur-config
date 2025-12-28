@@ -1,0 +1,67 @@
+services:
+  minecraft:
+    image: itzg/minecraft-server:latest
+    container_name: purpur
+    restart: unless-stopped
+    ports:
+      - "25565:25565"
+    environment:
+      EULA: "TRUE"
+
+      SPIGET_RESOURCES: "86090,117277,57806,111876,92834,111156,57242,6245"
+      MODRINTH_PROJECTS: "skinsrestorer"
+      PLUGINS: |
+        https://github.com/YiC200333/XConomy/releases/download/2.26.3/XConomy-Paper-2.26.3.jar
+      # rewardable-activities.86090
+      # vaultunlocked.117277
+      # skinsrestorer.2124
+      # tab-1-7-x-1-21-11.57806
+      # better-graves.111876
+      # chunkloader.92834
+      # xconomy.75669
+      # worldborder-1-13-x-1-20-x.111156
+      # spark.57242
+      # placeholderapi.6245
+
+      TYPE: "PURPUR"
+      VERSION: "1.21.4"
+
+      MEMORY: "4G"
+      JVM_XX_OPTS: "-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1"
+
+      # Server config
+      SERVER_NAME: "Purpur Server"
+      MOTD: "Purpur"
+      DIFFICULTY: "hard"
+      MODE: "survival"
+      PVP: "true"
+      ONLINE_MODE: "false"
+      VIEW_DISTANCE: "8"
+      SIMULATION_DISTANCE: "6"
+      MAX_PLAYERS: "50"
+
+      LEVEL: "world"
+      LEVEL_TYPE: "default"
+      SEED: ""
+
+      OPS: "cordeliers"
+      WHITELIST: ""
+
+      ENABLE_RCON: "true"
+      RCON_PASSWORD: "1234"
+      RCON_PORT: "25575"
+
+      TZ: "America/Sao_Paulo"
+
+    volumes:
+      - ./data:/data
+
+      - ./configs/tab.yml:/data/plugins/TAB/config.yml
+      - ./configs/xconomy.yml:/data/plugins/XConomy/config.yml
+      - ./configs/rewardable.yml:/data/plugins/RewardableActivities/config.yml
+      - ./configs/skinsrestorer.yml:/data/plugins/SkinsRestorer/config.yml
+      - ./configs/graves.yml:/data/plugins/Graves/config.yml
+      - ./configs/chunkloader.yml:/data/plugins/ChunkLoader/config.yml
+      - ./configs/worldborder.yml:/data/plugins/WorldBorder/config.yml
+      - ./configs/paper-world-defaults.yml:/config/paper-world-defaults.yml:ro
+

@@ -1,0 +1,14 @@
+general:
+  enabled: true
+
+entities:
+  default:
+    enabled: true
+
+players:
+  enabled: true
+
+grave:
+  protect-time: 300
+  drop-xp: false
+  keep-inventory: false

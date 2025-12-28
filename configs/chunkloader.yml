@@ -1,0 +1,9 @@
+limits:
+  default: 1
+  vip: 3
+
+require-permission: true
+chunk-load: true
+log-chunk-load: true
+update-checker: true
+lang: en

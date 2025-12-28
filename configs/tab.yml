@@ -1,0 +1,102 @@
+config-version: 2
+debug: false
+
+use-online-uuid-in-tablist: true
+permission-refresh-interval: 1000
+
+proxy-support:
+  enabled: true
+  type: PLUGIN
+  plugin:
+    name: RedisBungee
+
+assign-groups-by-permissions: false
+primary-group-finding-list:
+  - Owner
+  - Admin
+  - Helper
+  - default
+
+placeholders:
+  register-tab-expansion: false
+
+components:
+  minimessage-support: true
+  disable-shadow-for-heads: true
+
+global-playerlist:
+  enabled: false
+  update-latency: false
+
+per-world-playerlist:
+  enabled: false
+
+prevent-spectator-effect:
+  enabled: false
+
+compensate-for-packetevents-bug: false
+
+ping-spoof:
+  enabled: false
+
+mysql:
+  enabled: false
+
+bossbar:
+  enabled: false
+
+layout:
+  enabled: false
+
+scoreboard:
+  enabled: false
+
+scoreboard-teams:
+  enabled: true
+
+tablist-name-formatting:
+  enabled: false
+
+
+belowname-objective:
+  enabled: false
+  value: "%health%"
+  title: "&cHealth"
+  fancy-value: "&c%health%"
+  fancy-value-default: "NPC"
+  disable-condition: "%world%=disabledworld"
+
+header-footer:
+  enabled: true
+  designs:
+    world-test:
+      display-condition: "%world%=test"
+      header:
+        - "Test header in world 'test'"
+      footer:
+        - "Test footer in world 'test'"
+
+    default:
+      display-condition: "%world%!=disabledworld"
+      header:
+        - "<#FFFFFF>&m                                                </#FFFF00>"
+        - "&r&7Online players: &f%online%"
+        - ""
+      footer:
+        - "&2Ping: &f%ping%"
+        - "&aTPS: &f%tps%"
+        - "&6MSPT: &f%mspt%"
+        - "&7&lUsed memory: &f%memory-used% MB / %memory-max% MB"
+        - "<#FFFFFF>&m                                                </#FFFF00>"
+
+playerlist-objective:
+  enabled: true
+  title: "TAB"
+  value: "%ping%"
+  fancy-value: "&7Ping: %ping%"
+  render-type: INTEGER
+  disable-condition: "%world%=disabledworld"
+
+playerlist-name-formatting:
+  enabled: true
+  format: "&f%player% &7| &6$%vault_eco_balance_formatted%"
