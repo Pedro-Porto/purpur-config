@@ -8,7 +8,7 @@ services:
     environment:
       EULA: "TRUE"
 
-      SPIGET_RESOURCES: "86090,117277,57806,111876,92834,111156,57242,6245"
+      SPIGET_RESOURCES: "86090,117277,57806,111876,92834,111156,57242,6245,81534"
       MODRINTH_PROJECTS: "skinsrestorer"
       PLUGINS: |
         https://github.com/YiC200333/XConomy/releases/download/2.26.3/XConomy-Paper-2.26.3.jar
@@ -22,11 +22,12 @@ services:
       # worldborder-1-13-x-1-20-x.111156
       # spark.57242
       # placeholderapi.6245
+      # chunky.81534
 
       TYPE: "PURPUR"
       VERSION: "1.21.4"
 
-      MEMORY: "4G"
+      MEMORY: "7G"
       JVM_XX_OPTS: "-XX:+UseG1GC -XX:+ParallelRefProcEnabled -XX:MaxGCPauseMillis=200 -XX:+UnlockExperimentalVMOptions -XX:+DisableExplicitGC -XX:+AlwaysPreTouch -XX:G1NewSizePercent=30 -XX:G1MaxNewSizePercent=40 -XX:G1HeapRegionSize=8M -XX:G1ReservePercent=20 -XX:G1HeapWastePercent=5 -XX:G1MixedGCCountTarget=4 -XX:InitiatingHeapOccupancyPercent=15 -XX:G1MixedGCLiveThresholdPercent=90 -XX:G1RSetUpdatingPauseTimePercent=5 -XX:SurvivorRatio=32 -XX:+PerfDisableSharedMem -XX:MaxTenuringThreshold=1"
 
       # Server config
